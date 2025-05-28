@@ -1,0 +1,18 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Dossier de l’environnement local (WAMP par exemple)
+wamp/
+xampp/
+
+# Node ou autres si un jour tu l’utilises
+node_modules/
+.env
+
+# Cache ou fichiers temporaires
+*.log
+*.tmp
+
+# Système de l’éditeur
+.vscode/
