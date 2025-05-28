@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00243b;
+  font-family: "Roboto", arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: "Fredoka", arial, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.conteneur {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/animeboy.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.site-name {
+  font-family: "Fredoka", arial, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.slogan {
+  font-family: "Robota", arial, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  width: 600px;
+}
+
+.container {
+  width: 1200px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
