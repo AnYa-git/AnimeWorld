@@ -12,14 +12,31 @@ body {
   color: white;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  position: relative;
+}
+
 h1 {
   font-family: "Fredoka", arial, sans-serif;
   font-weight: 500;
   font-size: 25px;
 }
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
 
 .conteneur {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url("../assets/img/animeboy.png");
   background-size: cover;
   height: 100vh;
@@ -37,7 +54,6 @@ h1 {
 }
 
 .slogan {
-  font-family: "Robota", arial, sans-serif;
   font-weight: 400;
   font-size: 25px;
   width: 600px;
@@ -47,8 +63,30 @@ h1 {
   width: 1200px;
 }
 
-main {
+.menu-navigation {
   display: flex;
-  flex-direction: column;
+  position: absolute;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  top: 0;
+  padding: 10px 100px;
+}
+
+.menu-items {
+  display: flex;
+  /* width: 400px;
+  justify-content: space-between; */
+  gap: 50px;
+}
+
+.menu-items a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-items a:hover {
+  opacity: 0.6;
+  transition: 0.4s;
 }
