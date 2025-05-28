@@ -14,8 +14,7 @@ body {
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -23,9 +22,11 @@ header {
 }
 
 h1 {
+  margin: 50px 0;
   font-family: "Fredoka", arial, sans-serif;
   font-weight: 500;
   font-size: 25px;
+  text-align: center;
 }
 a {
   text-decoration: none;
@@ -36,7 +37,7 @@ nav ul {
 }
 
 .conteneur {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../assets/img/animeboy.png");
   background-size: cover;
   height: 100vh;
@@ -45,6 +46,10 @@ nav ul {
   /* align-items: center; */
   justify-content: center;
   padding-left: 100px;
+}
+
+.logo img {
+  width: 60px;
 }
 
 .site-name {
@@ -60,7 +65,7 @@ nav ul {
 }
 
 .container {
-  width: 1200px;
+  width: 1320px;
 }
 
 .menu-navigation {
@@ -89,4 +94,16 @@ nav ul {
 .menu-items a:hover {
   opacity: 0.6;
   transition: 0.4s;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  border: solid 1px white;
+  border-radius: 5px;
 }
