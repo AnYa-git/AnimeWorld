@@ -3,6 +3,8 @@
 /* VARIABLES */
 :root {
   --couleurPrimaire: #00243b;
+  --couleuurSecondaire: #581013;
+  --policePrincipale: "Fredoka";
 }
 
 * {
@@ -34,7 +36,7 @@ a {
 
 h1 {
   margin: 50px 0;
-  font-family: "Fredoka", arial, sans-serif;
+  font-family: var(--policePrincipale, arial, sans-serif);
   font-weight: 500;
   font-size: 25px;
   text-align: center;
@@ -61,7 +63,7 @@ nav ul {
 }
 
 .site-name {
-  font-family: "Fredoka", arial, sans-serif;
+  font-family: var(--policePrincipale, arial, sans-serif);
   font-weight: 700;
   font-size: 50px;
   padding-bottom: 20px;
@@ -116,6 +118,7 @@ nav ul {
 .card {
   /* width: 100px;
   height: 100px; */
-  border: solid 1px white;
+  border: solid 2px var(--couleuurSecondaire);
+  box-shadow: 5px 5px 15px var(--couleuurSecondaire);
   border-radius: 5px;
 }
