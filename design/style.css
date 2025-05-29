@@ -7,6 +7,7 @@
   --policePrincipale: "Fredoka";
   --policeSecondaire: "Roboto";
   --borderRadius: 10px;
+  --borderRadiusBtn: 20px;
 }
 
 * {
@@ -68,7 +69,6 @@ h1 {
   font-family: var(--policePrincipale, arial, sans-serif);
   font-weight: 700;
   font-size: 50px;
-  padding-bottom: 20px;
   text-shadow: 0 0 10px var(--couleurSecondaire),
     0 0 20px var(--couleurSecondaire);
 }
@@ -77,6 +77,25 @@ h1 {
   font-weight: 400;
   font-size: 22px;
   width: 600px;
+  padding: 30px 0;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  font-weight: 600;
+  border-radius: var(--borderRadiusBtn);
+  background-color: var(--couleurSecondaire);
+  box-shadow: 2px 2px 5px black;
+  transition: all 0.4s;
+}
+
+.call-to-action:hover {
+  background-color: var(--couleurPrimaire);
+  box-shadow: 0 0 10px black;
 }
 
 .container {
