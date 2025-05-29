@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* VARIABLES */
+:root {
+  --couleurPrimaire: #00243b;
+}
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #00243b;
+  /* margin: 0;
+  padding: 0; */
+  background-color: var(--couleurPrimaire);
   font-family: "Roboto", arial, sans-serif;
   color: white;
 }
@@ -21,15 +28,16 @@ header {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   margin: 50px 0;
   font-family: "Fredoka", arial, sans-serif;
   font-weight: 500;
   font-size: 25px;
   text-align: center;
-}
-a {
-  text-decoration: none;
 }
 
 nav ul {
@@ -49,18 +57,19 @@ nav ul {
 }
 
 .logo img {
-  width: 60px;
+  width: 70px;
 }
 
 .site-name {
   font-family: "Fredoka", arial, sans-serif;
   font-weight: 700;
   font-size: 50px;
+  padding-bottom: 20px;
 }
 
 .slogan {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
   width: 600px;
 }
 
@@ -96,14 +105,17 @@ nav ul {
   transition: 0.4s;
 }
 
-.cards {
+.grid-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 400px);
+  justify-content: center;
+  gap: 40px;
 }
+
 .card {
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
   border: solid 1px white;
   border-radius: 5px;
 }
