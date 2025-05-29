@@ -6,6 +6,7 @@
   --couleurSecondaire: #581013;
   --policePrincipale: "Fredoka";
   --policeSecondaire: "Roboto";
+  --borderRadius: 10px;
 }
 
 * {
@@ -122,14 +123,34 @@ h1 {
   /* width: 100px;
   height: 100px; */
   border: solid 2px var(--couleurSecondaire);
-  box-shadow: 5px 5px 15px var(--couleurSecondaire);
-  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--couleurSecondaire);
+  border-radius: var(--borderRadius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 .card:hover {
   cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.4s ease;
+  transform: scale(1.07);
+  box-shadow: 0 0 20px var(--couleurSecondaire),
+    0 0 30px var(--couleurSecondaire);
+  font-size: 25px;
+  transition: all 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+}
+
+.card p {
+  font-family: var(--policePrincipale);
+  font-weight: 600;
 }
 
 .logo-footer img {
