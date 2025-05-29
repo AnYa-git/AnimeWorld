@@ -126,6 +126,12 @@ h1 {
   border-radius: 5px;
 }
 
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
 .logo-footer img {
   width: 70px;
 }
