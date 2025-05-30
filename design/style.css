@@ -97,22 +97,39 @@ h1 {
   padding: 30px 0;
 }
 
-.call-to-action {
+.btn-call-to-action {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 220px;
   height: 50px;
+  position: relative;
   font-weight: 600;
   border-radius: var(--borderRadiusBtn);
   background-color: var(--couleurSecondaire);
-  box-shadow: 2px 2px 5px black;
-  transition: all 0.4s;
+  /* box-shadow: 0 0 10px black; */
+  box-shadow: 0 0 10px var(--couleurSecondaire),
+    0 0 20px var(--couleurSecondaire);
+  z-index: 1;
 }
 
-.call-to-action:hover {
+.btn-call-to-action::before {
+  content: "";
+  width: 0px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: var(--couleurPrimaire);
-  box-shadow: 0 0 10px black;
+  border-radius: var(--borderRadiusBtn);
+  transition: 0.4s linear;
+  z-index: -1;
+}
+
+.btn-call-to-action:hover::before {
+  width: 220px;
+  box-shadow: 0 0 10px var(--couleurSecondaire),
+    0 0 20px var(--couleurSecondaire);
 }
 
 .menu-navigation {
