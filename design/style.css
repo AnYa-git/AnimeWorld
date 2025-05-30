@@ -3,6 +3,7 @@
 /* VARIABLES */
 :root {
   --couleurPrimaire: #00243b;
+  --couleurPrimaireRgb: 0, 36, 59;
   --couleurSecondaire: #581013;
   --policePrincipale: "Fredoka";
   --policeSecondaire: "Roboto";
@@ -13,14 +14,16 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
-
-::-webkit-scrollbar-thumb {
-  background: var(--couleurPrimaire);
-  border-radius: 10px;
-}
-
 ::-webkit-scrollbar-track {
   background-color: var(--couleurSecondaire);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--couleurPrimaireRgb), 1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--couleurPrimaireRgb), 0.8);
 }
 
 * {
