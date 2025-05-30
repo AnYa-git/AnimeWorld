@@ -153,12 +153,31 @@ h1 {
   gap: 50px;
 }
 
-.menu-items a {
+.menu-link {
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  padding: 0 5px;
 }
 
-.menu-items a:hover {
+.menu-link::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  bottom: -10px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+
+.menu-link:hover::after {
+  transform: scaleX(1);
+}
+
+.menu-link:hover {
   opacity: 0.6;
   transition: 0.4s;
 }
