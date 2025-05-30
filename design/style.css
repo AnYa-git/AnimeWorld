@@ -35,12 +35,16 @@
 body {
   /* margin: 0;
   padding: 0; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--couleurPrimaire);
   font-family: var(--policeSecondaire, arial, sans-serif);
   color: white;
 }
 
 main {
+  flex: 1; /* Le main (ou la partie centrale) prend tout l'espace disponible */
   display: flex;
   justify-content: center;
 }
@@ -248,4 +252,33 @@ footer {
   align-items: center;
   padding: 0 100px;
   margin-top: 50px;
+}
+
+/* ---------------------------------------
+style de la page about
+--------------------------------------- */
+
+.about-container {
+  border-radius: var(--borderRadius);
+  animation: fadeIn 0.5s ease-in-out;
+  margin: 120px 0 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-container p {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  padding: 20px 30px;
+  text-align: center;
 }
